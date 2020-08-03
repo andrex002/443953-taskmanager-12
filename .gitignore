@@ -2,6 +2,7 @@
 .DS_Store
 Thumbs.db
 
+
 # Файлы редактора
 .idea
 *.sublime*
@@ -14,3 +15,15 @@ node_modules/
 # Папка с собранными файлами проекта
 public/bundle.js
 public/bundle.js.map
+=======
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+
+node_modules
+.idea
+.idea/workspace.xml
+
