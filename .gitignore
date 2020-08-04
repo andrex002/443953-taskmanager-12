@@ -1,12 +1,19 @@
-* text eol=lf
+# Файлы и папки операционной системы
+.DS_Store
+Thumbs.db
 
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.webp binary
-*.woff binary
-*.woff2 binary
 
-node_modules
+# Файлы редактора
 .idea
-.idea/workspace.xml
+*.sublime*
+.vscode
+
+# Вспомогательные файлы
+*.log*
+node_modules/
+
+# Папка с собранными файлами проекта
+public/bundle.js
+public/bundle.js.map
+
+
