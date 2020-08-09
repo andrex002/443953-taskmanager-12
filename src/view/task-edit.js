@@ -38,7 +38,7 @@ const createTaskEditRepeatingTemplate = (repeating) => {
         >${day}</label
       >`).join(``)}
     </div>
-  </fieldset>`: ``}`;
+  </fieldset>` : ``}`;
 };
 
 const createTaskEditColorsTemplate = (currentColor) => {

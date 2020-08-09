@@ -47,11 +47,11 @@ if (tasks.length > TASK_COUNT_PER_STEP) {
     evt.preventDefault();
     tasks
       .slice(renderedTaskCount, renderedTaskCount + TASK_COUNT_PER_STEP)
-      .forEach((task) => render(taskListElement,createTaskTemplate(task), `beforeend`));
+      .forEach((task) => render(taskListElement, createTaskTemplate(task), `beforeend`));
 
     renderedTaskCount += TASK_COUNT_PER_STEP;
 
-    if(renderedTaskCount >= tasks.length) {
+    if (renderedTaskCount >= tasks.length) {
       loadMoreButton.remove();
     }
   });

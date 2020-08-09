@@ -6,7 +6,7 @@ const generateDescription = () => {
     `Изучить теорию`,
     `Сделать домашку`,
     `Пройти интенсив на 100%`
- ];
+  ];
 
   const randomIndex = getRandomInteger(0, description.length - 1);
 
@@ -16,7 +16,7 @@ const generateDescription = () => {
 const generateDate = () => {
   const isDate = Boolean(getRandomInteger(0, 1));
 
-  if(!isDate) {
+  if (!isDate) {
     return null;
   }
 
