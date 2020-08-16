@@ -1,17 +1,13 @@
 import {COLORS} from "../const.js";
 import {getRandomInteger} from "../utils.js";
 
-const generateDescription = () => {
-  const description = [
-    `Изучить теорию`,
-    `Сделать домашку`,
-    `Пройти интенсив на 100%`
-  ];
+const DESCRIPTION = [
+  `Изучить теорию`,
+  `Сделать домашку`,
+  `Пройти интенсив на 100%`
+];
 
-  const randomIndex = getRandomInteger(0, description.length - 1);
-
-  return description[randomIndex];
-};
+const generateDescription = () => DESCRIPTION[getRandomInteger(0, DESCRIPTION.length - 1)];
 
 const generateDate = () => {
   const isDate = Boolean(getRandomInteger(0, 1));
@@ -42,11 +38,7 @@ const generateRepeating = () => {
   };
 };
 
-const getRandomColor = () => {
-  const randomIndex = getRandomInteger(0, COLORS.length - 1);
-
-  return COLORS[randomIndex];
-};
+const getRandomColor = () => COLORS[getRandomInteger(0, COLORS.length - 1)];
 
 export const generateTask = () => {
   const dueDate = generateDate();
