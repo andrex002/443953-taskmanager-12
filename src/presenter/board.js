@@ -46,7 +46,7 @@ export default class Board {
       case SortType.DATE_DOWN:
         this._boardTasks.sort(sortTaskDown);
         break;
-      default: 
+      default:
         this._boardTasks = this._sourcedBoardTasks.slice();
     }
 
