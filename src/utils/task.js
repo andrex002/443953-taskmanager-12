@@ -1,3 +1,5 @@
+import moment from "moment";
+
 const getCurrentDate = () => {
   const currentDate = new Date();
   currentDate.setHours(23, 59, 59, 999);
@@ -27,7 +29,13 @@ export const isTaskExpiringToday = (dueDate) => {
 
 export const isTaskRepeating = (repeating) => Object.values(repeating).some(Boolean);
 
-export const humanizeTaskDueDate = (dueDate) => dueDate.toLocaleString(`en-Us`, {day: `numeric`, month: `long`});
+export const formatTaskDueDate = (dueDate) => {
+  if (!(dueDate instanceof Date)) {
+    return ``;
+  }
+
+  return moment(dueDate).format(`D MMMM`);
+}
 
 const getWeightForNullDate = (dateA, dateB) => {
   if (dateA === null && dateB === null) {

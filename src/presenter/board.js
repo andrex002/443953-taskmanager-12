@@ -116,7 +116,7 @@ export default class Board {
   _clearTaskList() {
     Object.values(this._taskPresenter).forEach((presenter) => presenter.destroy());
     this._taskPresenter = {};
-    this._renderTaskCount = TASK_COUNT_PER_STEP;
+    this._renderedTaskCount = TASK_COUNT_PER_STEP;
   }
 
   _renderTaskList() {
